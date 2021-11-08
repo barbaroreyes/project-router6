@@ -2,20 +2,19 @@
 import './App.css';
 import Header from './compo/Header';
 import Footer from './compo/Footer';
-import Param from './compo/Param';
+import SingleProduct from './compo/Param';
 import Home from './pages/Home'
-import All from './pages/All'
+import Products from './pages/Products'
 import { Routes , Route} from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
        <Header/>
-        
-          <Routes>
+         <Routes>
             <Route path='/' element={<Home/>}/>
-            <Route path='/all' element={<All/>}/>
-            <Route path='/param/:id' element={<Param/>}/>
+            <Route path='/all' element={<Products/>}/>
+            <Route path='/param/:id' element={<SingleProduct/>}/>
           </Routes>
         
        <Footer/>
