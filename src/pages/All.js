@@ -18,7 +18,16 @@ const All = () => {
     const words = ['papa1','papa2','papa3']
   return (
     <Container>
-      {words.map()}
+      {words.map((item ,i) => {
+        return(
+           <div key={i}>
+            <Link to={`/param/${i}`}>
+            <p>{item}</p>
+            </Link>
+            
+           </div>
+        )
+      })}
     </Container>
   )
 }

@@ -10,12 +10,12 @@ import { Routes , Route} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-       <Head
+       <Header/>
         
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/all' element={<All/>}/>
-            <Route path='/param/:first/:second' element={<Param/>}/>
+            <Route path='/param/:id' element={<Param/>}/>
           </Routes>
         
        <Footer/>

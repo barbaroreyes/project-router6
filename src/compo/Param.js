@@ -2,12 +2,12 @@ import React from 'react'
 import {useParams} from 'react-router-dom'
 
 const Param = () => {
-    const params = useParams()
+    const param = useParams()
     const words = ['papa1','papa2','papa3']
-    console.log(params,'params')
+    console.log(param,'params')
   return (
     <div>
-      {words[params.first]}{params.second}
+      {words[param.id]}
     </div>
   )
 }
