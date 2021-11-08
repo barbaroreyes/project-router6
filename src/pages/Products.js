@@ -23,13 +23,14 @@ padding:10px;
 
 `
 
-const Products = () => {
-    const words = ['papa1','papa2','papa3','papa4']
+const Products = (props) => {
+    
   return (
     <Container>
-      {words.map((item ,i) => {
+      {props.words.map((item ,i) => {
+        
         return(
-           <LinkContainer key={i}>
+           <LinkContainer key={i} {...item}>
             <Link 
             style={{border:'5px solid black',textDecoration: 'none',color:'white',margin:'10px',background: 'orange'}}
             to={`/param/${i}`}>

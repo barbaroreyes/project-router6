@@ -8,12 +8,12 @@ display: flex;
 flex-direction: column;
 `
 const Param = (props) => {
+ 
     const param = useParams()
-    const words = ['papa1','papa2','papa3','papa4']
     console.log(param,'params')
   return (
     <Container>
-      {words[param.id]}
+      {props.words[param.id]}
     </Container>
   )
 }
