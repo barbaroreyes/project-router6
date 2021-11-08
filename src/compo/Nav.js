@@ -21,8 +21,8 @@ const Nav = () => {
   return (
     <Container>
      <div onClick={()=>navigate('/')}>Home</div>
-     <div onClick={()=>navigate('/all')}>All</div>
-     <div onClick={()=>navigate('/param/pepe/papo')}>Param</div>
+     <div onClick={()=>navigate('/all')}>Products</div>
+     {/* <div onClick={()=>navigate('/param/pepe/papo')}>Param</div> */}
     </Container>
   )
 }
