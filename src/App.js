@@ -9,9 +9,9 @@ import Cart from './pages/Cart'
 import { Routes , Route} from 'react-router-dom'
 const words = ['papa1','papa2','papa3','papa4']
 function App() {
-const [cart,setCart] = useState()
+const [cart,setCart] = useState([])
   const addTocart =(product) => {
-  setCart(product)
+  setCart([...cart,product])
   }
   return (
     <div className="App">

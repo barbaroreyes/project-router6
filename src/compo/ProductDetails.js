@@ -14,7 +14,10 @@ const Param = (props) => {
     const param = useParams()
     console.log(param,'params')
   return (
-    <Container onClick={()=>navigate('/cart')}>
+    <Container onClick={()=> {
+      navigate('/cart'); 
+      props.addTocart(props.words[param.id])
+      }}>
       {props.words[param.id]}
     </Container>
   )
